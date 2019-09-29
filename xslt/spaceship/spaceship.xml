@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet
+        type="text/xsl"
+        href="spaceship.xslt"
+        version="1.0" ?>
+<ssp:spaceship xmlns:ssp="http://spaceship">
+    <ssp:cargospace>
+        <ssp:cargo amount="120">Slime</ssp:cargo>
+        <ssp:cargo amount="25">Lazers</ssp:cargo>
+        <ssp:cargo amount="88">Mushrooms from planet</ssp:cargo>
+        <ssp:cargo amount="3">Fusion reactor</ssp:cargo>
+        <ssp:cargo amount="123064">Radio equipment</ssp:cargo>
+        <ssp:cargo amount="1">Hyperspace drive</ssp:cargo>
+    </ssp:cargospace>
+</ssp:spaceship>

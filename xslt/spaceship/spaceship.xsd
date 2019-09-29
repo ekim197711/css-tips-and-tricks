@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://spaceship"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="spaceship" type="spaceshipType"/>
+
+    <xs:complexType name="cargoType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="amount" type="xs:integer"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="cargospaceType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="cargo" type="cargoType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="spaceshipType">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="cargospace" type="cargospaceType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
